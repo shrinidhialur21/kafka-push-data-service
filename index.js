@@ -2,7 +2,7 @@ const { Kafka } = require("kafkajs");
 
 const kafka = new Kafka({
     clientId: "producer1",
-    brokers: ["localhost:9094"], // Changed from broker:9092 to localhost:9092
+    brokers: ["my-cluster-kafka-bootstrap.kafka:9092"] 
   });
 
 const producer = kafka.producer();
